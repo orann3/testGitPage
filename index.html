@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  
+
   <meta charset="utf-8">
   <meta name="description"
-        content="RoboMIND: Establishing a Benchmark for Multi-embodiment Intelligence Normative Data in Robot Manipulation.">
+    content="RoboMIND: Establishing a Benchmark for Multi-embodiment Intelligence Normative Data in Robot Manipulation.">
   <meta name="keywords" content="RoboMIND, Multi-embodiment Intelligence, Robot Manipulation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RoboMIND: Benchmark on Multi-embodiment Intelligence Normative Data for Robot Manipulation</title> 
+  <title>RoboMIND: Benchmark on Multi-embodiment Intelligence Normative Data for Robot Manipulation</title>
 
 
   <script>
     window.dataLayer = window.dataLayer || [];
   </script>
 
-  <!-- <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
   <!-- <link href="./static/css/googlecss.css"
         rel="stylesheet"> -->
-
+  <!-- <link href="./static/webfonts/google-sans.woff2"> -->
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <!-- <link rel="stylesheet" href="./static/css/academicons.min.css"> -->
+  <link rel="stylesheet" href="./static/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg"> 
+  <link rel="icon" href="./static/images/favicon.svg">
 
   <script src="./static/js/jquerymin351.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -33,25 +34,26 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
+
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://x-humanoid.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://x-humanoid.com">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+        </a>
 
-      <!-- <div class="navbar-item has-dropdown is-hoverable">
+        <!-- <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
           More 
         </a>
@@ -64,45 +66,63 @@
           </a>
         </div>
       </div> -->
+      </div>
+
     </div>
-
-  </div>
-</nav>
+  </nav>
 
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">RoboMIND: Benchmark on Multi-embodiment
-            Intelligence Normative Data for Robot Manipulation </h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://keunhong.com">Kun Wu</a>
-              <a href="mailto:jasonyma@seas.upenn.edu">
-                <span class="icon">
-                    <svg class="svg-inline--fa fa-envelope fa-w-16" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg><!-- <i class="fa fa-envelope"></i> Font Awesome fontawesome.com -->
-                </span>
-            </a>
-            <sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://keunhong.com">Kun Wu</a>
-              <a href="mailto:jasonyma@seas.upenn.edu">
-                <span class="icon">
-                    <svg class="svg-inline--fa fa-envelope fa-w-16" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg><!-- <i class="fa fa-envelope"></i> Font Awesome fontawesome.com -->
-                </span>
-            </a>
-            <sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="https://keunhong.com">Kun Wu</a>
-              <a href="mailto:jasonyma@seas.upenn.edu">
-                <span class="icon">
-                    <svg class="svg-inline--fa fa-envelope fa-w-16" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg><!-- <i class="fa fa-envelope"></i> Font Awesome fontawesome.com -->
-                </span>
-            </a>
-            <sup>3</sup>,</span>
-            <!-- <span class="author-block"> -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">RoboMIND: Benchmark on Multi-embodiment
+              Intelligence Normative Data for Robot Manipulation </h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://keunhong.com">Kun Wu</a>
+                <a href="mailto:jasonyma@seas.upenn.edu">
+                  <span class="icon">
+                    <svg class="svg-inline--fa fa-envelope fa-w-16" aria-hidden="true" focusable="false"
+                      data-prefix="fa" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512" data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+                      </path>
+                    </svg><!-- <i class="fa fa-envelope"></i> Font Awesome fontawesome.com -->
+                  </span>
+                </a>
+                <sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://keunhong.com">Kun Wu</a>
+                <a href="mailto:jasonyma@seas.upenn.edu">
+                  <span class="icon">
+                    <svg class="svg-inline--fa fa-envelope fa-w-16" aria-hidden="true" focusable="false"
+                      data-prefix="fa" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512" data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+                      </path>
+                    </svg><!-- <i class="fa fa-envelope"></i> Font Awesome fontawesome.com -->
+                  </span>
+                </a>
+                <sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://keunhong.com">Kun Wu</a>
+                <a href="mailto:jasonyma@seas.upenn.edu">
+                  <span class="icon">
+                    <svg class="svg-inline--fa fa-envelope fa-w-16" aria-hidden="true" focusable="false"
+                      data-prefix="fa" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512" data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+                      </path>
+                    </svg><!-- <i class="fa fa-envelope"></i> Font Awesome fontawesome.com -->
+                  </span>
+                </a>
+                <sup>3</sup>,</span>
+              <!-- <span class="author-block"> -->
               <!-- <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
             <span class="author-block">
               <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
@@ -119,254 +139,229 @@
             <span class="author-block">
               <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
             </span> -->
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>X-Humanoid,</span>
-            <span class="author-block"><sup>2</sup>University of Washington</span>
-          </div>
-
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/x-humanoid-robomind"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://zitd5je6f7j.feishu.cn/share/base/form/shrcnOF6Ww4BuRWWtxljfs0aQqh"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-database"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
             </div>
 
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>X-Humanoid,</span>
+              <span class="author-block"><sup>2</sup>University of Washington</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2011.12948" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2011.12948" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/x-humanoid-robomind"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- Dataset Link. -->
+                <span class="link-block">
+                  <a href="https://zitd5je6f7j.feishu.cn/share/base/form/shrcnOF6Ww4BuRWWtxljfs0aQqh"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-database"></i>
+                    </span>
+                    <span>Data</span>
+                  </a>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video id="teaser" autoplay muted loop playsinline height="100%">
+          <source src="./static/videos/teaser.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          <span class="dnerf">RoboMIND</span> , a comprehensive benchmark for multi-embodiment intelligence in robot
+          manipulation, offers a rich dataset of 55,000 real-world demonstration trajectories across 279 diverse tasks,
+          covering 61 distinct object classes.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero is-light is-small">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">RoboMIND</span> , a comprehensive benchmark for multi-embodiment intelligence in robot manipulation, offers a rich dataset of 55,000 real-world demonstration trajectories across 279 diverse tasks, covering 61 distinct object classes.
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fail_1.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fail_1.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fail_1.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fail_1.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fail_1.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fail_1.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fail_1.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fail_1.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            
-             Artificial Intelligence (AI), as a data-driven dis
- cipline, relies on robust data resources as the cornerstone
-  for advancing embodied AI and ultimately achieving artificial
-  general intelligence (AGI). The flourishing development and
-  remarkable success of foundation models in Natural Language
-  Processing (NLP) and Computer Vision (CV), built upon massive
-  datasets, have provided guidance for the future development
-  of robotics, further driving the demand for comprehensive
-  robotic datasets and benchmarks. (... have guided the future
-  development of robotics) 
-          </p>
-          <p>
-            In this paper, we introduce RoboMIND,
- a large-scale multi-embodiment dataset and benchmark for robot
- manipulation. RoboMIND encompasses data from four distinct
- robotic embodiments: the Franka Emika Panda, UR-5e, AgileX
- Cobot Magic V2.0, and our custom humanoid robot Tien Kung
- equipped with dual dexterous hands. (and our self-developed
- humanoid robot TienKung- Pro equipped with ...) The dataset
- comprises 55k demonstrations (demonstrations) across 279 tasks,
- involving 61 different object classes and 36 unique manipulation
- skills, providing a broad and diverse training ground for robotic
- learning. The benchmark outlines a clear pipeline for data collec
-tion, model training, and evaluation. It also includes experimental
- results of multiple baseline methods across both single-task
- and multi-task settings, offering valuable references for future
- research.
-          </p>
-          <p>
-            RoboMIND aims to provide researchers and developers
- with comprehensive resources for improving and evaluating
- robotic manipulation algorithms, including robust data resources,
- systematic testing procedures, and extensive experimental results,
- thereby establishing a solid foundation for future research.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-
-     <!-- Data Overview. -->
-     <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Data Overview</h2>
-        <div class="content has-text-justified">
-          <img src="./static/images/overview.png" class="img-responsive">
-          <p> We introduce RoboMIND (Multi-embodiment Intelligence Normative Data for Robot Manipulation), 
-            comprising  55k real-world demonstration trajectories across 279 diverse tasks involving 61 distinct object classes.  </p>
-          
-          <p> To ensure consistency and reliability during policy learning, RoboMIND is gathered through human 
-            teleoperation and structured around a unified data collection standard. The four pie charts represent:
-             (a) total trajectories categorized by embodiments, (b) trajectory lengths by embodiments, 
-             (c) total trajectories grouped by task categories, and (d) total trajectories based on object usage scenarios. </p>
-          
-          <img src="./static/images/Comparison.png" class="img-responsive">
-          <p> Comparison to existing real-world datasets for robot manipulation. All data is drawn from the original paper or from [41].
-            We highlight advantages of RoboMIND in pink. </p>
-          
-        </div>
-      </div>
-    </div>
-    <br/>
-    <!-- / Data Overview. -->
-
-
-    <!-- Dataset Analysis. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Dataset Analysis</h2>
-        <p> To support the development of such a large-scale dataset, we established a comprehensive data collection process, 
-          which we continuously refine. This data collection process involves three core components: 
-          1) A teleoperation system enabling operators to control robotic arms in real time. 
-          2) An internally developed intelligent data platform for efficient data collection, management, processing, and analysis. 
-          3) A quality assurance process to filter high-quality data for downstream applications.  </p>
-          <br>
-        <!-- Robotic real-world setup. -->
-        <h3 class="title is-4">Robotic real-world setup</h3>
-        <div class="content has-text-justified">
-          <img src="./static/images/figure7.png" class="img-responsive">
-          <p> For the Franka Emika Panda  robots, we use cameras positioned at the top, left, and right  viewpoints to record the 
-            visual information of the task trajec tories. For the AgileX/Tien Kung robots, we use their built-in  cameras to record 
-            visual information. For the UR robots, we  use an external top camera. </p>
-         <!-- Diverse task examples. -->
-            <img src="./static/images/figure8.png" class="img-responsive">
-          <p> Diverse task examples across 4 robotic embodiments in RoboMIND. We have selected 6 representative task scenarios
-            for each robotic embodiment. The dataset features tasks performed by four distinct robotic embodiments: Franka (first row),
-            Tien Kung (second row), AgileX (third row), and UR (fourth row) </p>
-        </div>
-   
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-steve">
+            <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/fail_1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-chair-tp">
+            <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/fail_1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-shiba">
+            <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/fail_1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-fullbody">
+            <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/fail_1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-blueshirt">
+            <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/fail_1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-mask">
+            <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/fail_1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-coffee">
+            <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/fail_1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-toby">
+            <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/fail_1.mp4" type="video/mp4">
+            </video>
           </div>
         </div>
-        <br/>
+      </div>
+    </div>
+  </section>
 
 
 
-    <!-- Results -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Results</h2>
-        <p> 
+
+  <section class="section" id="single-task-1">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+
+              Artificial Intelligence (AI), as a data-driven dis
+              cipline, relies on robust data resources as the cornerstone
+              for advancing embodied AI and ultimately achieving artificial
+              general intelligence (AGI). The flourishing development and
+              remarkable success of foundation models in Natural Language
+              Processing (NLP) and Computer Vision (CV), built upon massive
+              datasets, have provided guidance for the future development
+              of robotics, further driving the demand for comprehensive
+              robotic datasets and benchmarks. (... have guided the future
+              development of robotics)
+            </p>
+            <p>
+              In this paper, we introduce RoboMIND,
+              a large-scale multi-embodiment dataset and benchmark for robot
+              manipulation. RoboMIND encompasses data from four distinct
+              robotic embodiments: the Franka Emika Panda, UR-5e, AgileX
+              Cobot Magic V2.0, and our custom humanoid robot Tien Kung
+              equipped with dual dexterous hands. (and our self-developed
+              humanoid robot TienKung- Pro equipped with ...) The dataset
+              comprises 55k demonstrations (demonstrations) across 279 tasks,
+              involving 61 different object classes and 36 unique manipulation
+              skills, providing a broad and diverse training ground for robotic
+              learning. The benchmark outlines a clear pipeline for data collec
+              tion, model training, and evaluation. It also includes experimental
+              results of multiple baseline methods across both single-task
+              and multi-task settings, offering valuable references for future
+              research.
+            </p>
+            <p>
+              RoboMIND aims to provide researchers and developers
+              with comprehensive resources for improving and evaluating
+              robotic manipulation algorithms, including robust data resources,
+              systematic testing procedures, and extensive experimental results,
+              thereby establishing a solid foundation for future research.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+      <!-- Data Overview. -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Data Overview</h2>
+          <div class="content has-text-justified">
+            <div class="yush-div-center">
+              <img src="./static/images/overview.png" class="img-responsive">
+            </div>
+
+            <p> We introduce RoboMIND (Multi-embodiment Intelligence Normative Data for Robot Manipulation),
+              comprising 55k real-world demonstration trajectories across 279 diverse tasks involving 61 distinct object
+              classes. </p>
+
+            <p> To ensure consistency and reliability during policy learning, RoboMIND is gathered through human
+              teleoperation and structured around a unified data collection standard. The four pie charts represent:
+              (a) total trajectories categorized by embodiments, (b) trajectory lengths by embodiments,
+              (c) total trajectories grouped by task categories, and (d) total trajectories based on object usage
+              scenarios. </p>
+
+            <img src="./static/images/Comparison.png" class="img-responsive">
+            <p> Comparison to existing real-world datasets for robot manipulation. All data is drawn from the original
+              paper or from [41].
+              We highlight advantages of RoboMIND in pink. </p>
+
+          </div>
+        </div>
+      </div>
+      <br />
+      <!-- / Data Overview. -->
+
+  </section>
+
+  <section class="section" id="demo">
+    <div class="container is-max-desktop">
+      <!-- Results -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Results</h2>
+      <!-- Results -->
+
+
+      <div id="rdt-1">
         <!-- single-task imitation learning model. -->
         <h3 class="title is-4">Single-task imitation learning model</h3>
         <div class="content has-text-justified">
@@ -374,16 +369,16 @@ tion, model training, and evaluation. It also includes experimental
           <p> For single-task imitation learning model, such as ACT,
             which is specifically designed for single-task learning, we
             trained it from scratch using the RobotMind dataset and di
-           rectly deployed it on the corresponding training tasks. Specifi
-           cally, we employed ACT [93], DP [12], and BAKU [32] algo
-           rithms, adhering to the default model settings recommended in
+            rectly deployed it on the corresponding training tasks. Specifi
+            cally, we employed ACT [93], DP [12], and BAKU [32] algo
+            rithms, adhering to the default model settings recommended in
             their original publications. These experiments were performed
             across 45 tasks, distributed as follows: 15 tasks with the Franka
             robot, 15 tasks with AgileX, 10 tasks with Tien Kung, and 5
             tasks with UR-5e, which are already explained in detail in the
             Section V-A.
-           
-           
+
+
             Figure 9 presents the performance of ACT, BAKU and
             DP across 45 tasks using four types of robots, evaluated
             in terms of success rate. In Figure 9, we found that ACT
@@ -394,389 +389,227 @@ tion, model training, and evaluation. It also includes experimental
             completion on the majority of tasks, which demonstrates the
             effectiveness of the approach, as well as the accuracy of the
             visual perception and robotic joint information provided by the
-            RoboMIND.  </p>
-            <section class="section">
-              <div class="container is-max-desktop">
-            
-                <div class="columns is-centered">
-            
-          <!-- Visual Effects. -->
-          <div class="column">
-            <div class="content">
-              <h4 class="title is-4">Demo1</h4>
-              <p>
-                Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-                would be impossible without nerfies since it would require going through a wall.
-              </p>
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/dollyzoom-stacked.mp4"
-                        type="video/mp4">
-              </video>
-            </div>
-          </div>
-          <!--/ Visual Effects. -->
-
-          <!-- Matting. -->
-          <div class="column">
-            <h4 class="title is-4">Demo2</h4>
+            RoboMIND. </p>
+          <p>
             <div class="columns is-centered">
-              <div class="column content">
-                <p>
-                  As a byproduct of our method, we can also solve the matting problem by ignoring
-                  samples that fall outside of a bounding box during rendering.
-                </p>
-                <video id="matting-video" controls playsinline height="100%">
-                  <source src="./static/videos/matting.mp4"
-                          type="video/mp4">
-                </video>
-              </div>
 
-            </div>
-          </div>
-          </div>
-          <!--/ Matting. -->
-            
-
-         <!-- RDT large-parameter model. -->
-         <h3 class="title is-4">RDT large-parameter model</h3>
-         <div class="content has-text-justified">
-            <img src="./static/images/RDT11.png" class="img-responsive">
-          <p> Diverse task examples across 4 robotic embodiments in RoboMIND. We have selected 6 representative task scenarios
-            for each robotic embodiment. The dataset features tasks performed by four distinct robotic embodiments: Franka (first row),
-            Tien Kung (second row), AgileX (third row), and UR (fourth row) </p>
-            <section class="section">
-              <div class="container is-max-desktop">
-            
-                <div class="columns is-centered">
-            
-          <!-- Visual Effects. -->
-          <div class="column">
-            <div class="content">
-              <h4 class="title is-4">Demo1</h4>
-              <p>
-                Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-                would be impossible without nerfies since it would require going through a wall.
-              </p>
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/dollyzoom-stacked.mp4"
-                        type="video/mp4">
-              </video>
-            </div>
-          </div>
-          <!--/ Visual Effects. -->
-
-          <!-- Matting. -->
-          <div class="column">
-            <h4 class="title is-4">Demo2</h4>
-            <div class="columns is-centered">
-              <div class="column content">
-                <p>
-                  As a byproduct of our method, we can also solve the matting problem by ignoring
-                  samples that fall outside of a bounding box during rendering.
-                </p>
-                <video id="matting-video" controls playsinline height="100%">
-                  <source src="./static/videos/matting.mp4"
-                          type="video/mp4">
-                </video>
-              </div>
-
-            </div>
-          </div>
-          </div>
-          <!--/ Matting. -->
-            
-         <!-- VLA large-parameter model. -->
-         <h3 class="title is-4">VLA large-parameter model</h3>
-         <div class="content has-text-justified">
-            <img src="./static/images/VLA11.png" class="img-responsive">
-          <p> Diverse task examples across 4 robotic embodiments in RoboMIND. We have selected 6 representative task scenarios
-            for each robotic embodiment. The dataset features tasks performed by four distinct robotic embodiments: Franka (first row),
-            Tien Kung (second row), AgileX (third row), and UR (fourth row) </p>
-            <section class="section">
-              <div class="container is-max-desktop">
-            
-                <div class="columns is-centered">
-            
-                  <!-- Visual Effects. -->
-                  <div class="column">
-                    <div class="content">
-                      <h4 class="title is-4">Demo1</h4>
-                      <p>
-                        Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-                        would be impossible without nerfies since it would require going through a wall.
-                      </p>
-                      <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-                        <source src="./static/videos/dollyzoom-stacked.mp4"
-                                type="video/mp4">
-                      </video>
-                    </div>
-                  </div>
-                  <!--/ Visual Effects. -->
-            
-                  <!-- Matting. -->
-                  <div class="column">
-                    <h4 class="title is-4">Demo2</h4>
-                    <div class="columns is-centered">
-                      <div class="column content">
-                        <p>
-                          As a byproduct of our method, we can also solve the matting problem by ignoring
-                          samples that fall outside of a bounding box during rendering.
-                        </p>
-                        <video id="matting-video" controls playsinline height="100%">
-                          <source src="./static/videos/matting.mp4"
-                                  type="video/mp4">
-                        </video>
-                      </div>
-            
-                    </div>
-                  </div>
+              <!-- Visual Effects. -->
+              <div class="column">
+                <div class="content">
+                  <h2 class="title is-3">Visual Effects</h2>
+                  <p>
+                    Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
+                    would be impossible without nerfies since it would require going through a wall.
+                  </p>
+                  <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/dollyzoom-stacked.mp4" type="video/mp4">
+                  </video>
                 </div>
-                <!--/ Matting. -->
-            
-        </div>
-   
-          </div>
-        </div>
+              </div>
+              <!--/ Visual Effects. -->
 
+              <!-- Matting. -->
+              <div class="column">
+                <h2 class="title is-3">Matting</h2>
+                <div class="columns is-centered">
+                  <div class="column content">
+                    <p>
+                      As a byproduct of our method, we can also solve the matting problem by ignoring
+                      samples that fall outside of a bounding box during rendering.
+                    </p>
+                    <video id="matting-video" controls playsinline height="100%">
+                      <source src="./static/videos/matting.mp4" type="video/mp4">
+                    </video>
+                  </div>
 
-
-        <!-- Re-rendering. -->
-        <!-- <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div> -->
-        <!--/ Re-rendering. -->
-
-    <!--/ Animation. -->
-
-
-    <!-- <div class="col-md-8 col-md-offset-2">
-      <h2>
-          <b>Dataset Overview</b>
-      </h2>
-      <img src="img/overview.png" class="img-responsive">
-      <p>We introduce the Open X-Embodiment Dataset, the largest open-source real robot dataset to date.
-          It contains 1M+ real robot trajectories spanning 22 robot embodiments,
-          from single robot arms to bi-manual robots and quadrupeds. </p>
-
-      <img src="img/data_analysis.png" class="img-responsive">
-      <p>The dataset was constructed by pooling 60 existing robot datasets from 34 robotic research labs
-          around the world. Our analysis shows that the number of visually distinct scenes is
-          well-distributed across different robot embodiments and that the dataset includes a wide range
-          of common behaviors and household objects.
-          For a detailed listing of all included datasets,
-          see <a target="_blank" href="https://docs.google.com/spreadsheets/d/1rPBD77tk60AEIGZrGSODwyyzs5FgCU9Uz3h-3_t2A9g/edit?usp=sharing">this
-              Google Sheet</a>.
-      </p>
-  </div> --> 
-
-
-
-
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Paper video. -->
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <!-- <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div> -->
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <!-- <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div> -->
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <!-- <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2> -->
-
-        <!-- Interpolating. -->
-        <!-- <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
+                </div>
+              </div>
             </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/> -->
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <!-- <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div> -->
-        <!--/ Re-rendering. -->
-<!-- 
-      </div>
-    </div> -->
-    <!--/ Animation. -->
-
-
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
+            <!--/ Matting. -->
         </div>
       </div>
-    </div>
-    <!--/ Concurrent Work. -->
+      <br>
+      <div id="rdt-2">
+        <!-- single-task imitation learning model. -->
+        <h3 class="title is-4">Single-task imitation learning model</h3>
+        <div class="content has-text-justified">
+          <img src="./static/images/Success rates.png" class="img-responsive">
+          <p> For single-task imitation learning model, such as ACT,
+            which is specifically designed for single-task learning, we
+            trained it from scratch using the RobotMind dataset and di
+            rectly deployed it on the corresponding training tasks. Specifi
+            cally, we employed ACT [93], DP [12], and BAKU [32] algo
+            rithms, adhering to the default model settings recommended in
+            their original publications. These experiments were performed
+            across 45 tasks, distributed as follows: 15 tasks with the Franka
+            robot, 15 tasks with AgileX, 10 tasks with Tien Kung, and 5
+            tasks with UR-5e, which are already explained in detail in the
+            Section V-A.
 
-  </div>
-</section>
+
+            Figure 9 presents the performance of ACT, BAKU and
+            DP across 45 tasks using four types of robots, evaluated
+            in terms of success rate. In Figure 9, we found that ACT
+            achieved an average success rate of 55.3% across 15 tasks
+            on AgileX, outperforming Franka (30.7%), UR-5e (38.0%),
+            and Tien Kung (34.0%). The experiment results indicate that
+            the ACT algorithm achieves at least one successful task
+            completion on the majority of tasks, which demonstrates the
+            effectiveness of the approach, as well as the accuracy of the
+            visual perception and robotic joint information provided by the
+            RoboMIND. </p>
+          <p>
+            <div class="columns is-centered">
+
+              <!-- Visual Effects. -->
+              <div class="column">
+                <div class="content">
+                  <h2 class="title is-3">Visual Effects</h2>
+                  <p>
+                    Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
+                    would be impossible without nerfies since it would require going through a wall.
+                  </p>
+                  <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/dollyzoom-stacked.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <!--/ Visual Effects. -->
+
+              <!-- Matting. -->
+              <div class="column">
+                <h2 class="title is-3">Matting</h2>
+                <div class="columns is-centered">
+                  <div class="column content">
+                    <p>
+                      As a byproduct of our method, we can also solve the matting problem by ignoring
+                      samples that fall outside of a bounding box during rendering.
+                    </p>
+                    <video id="matting-video" controls playsinline height="100%">
+                      <source src="./static/videos/matting.mp4" type="video/mp4">
+                    </video>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!--/ Matting. -->
+        </div>
+      </div>
+      <br>
+      <div id="rdt-3">
+        <!-- single-task imitation learning model. -->
+        <h3 class="title is-4">Single-task imitation learning model</h3>
+        <div class="content has-text-justified">
+          <img src="./static/images/Success rates.png" class="img-responsive">
+          <p> For single-task imitation learning model, such as ACT,
+            which is specifically designed for single-task learning, we
+            trained it from scratch using the RobotMind dataset and di
+            rectly deployed it on the corresponding training tasks. Specifi
+            cally, we employed ACT [93], DP [12], and BAKU [32] algo
+            rithms, adhering to the default model settings recommended in
+            their original publications. These experiments were performed
+            across 45 tasks, distributed as follows: 15 tasks with the Franka
+            robot, 15 tasks with AgileX, 10 tasks with Tien Kung, and 5
+            tasks with UR-5e, which are already explained in detail in the
+            Section V-A.
 
 
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
+            Figure 9 presents the performance of ACT, BAKU and
+            DP across 45 tasks using four types of robots, evaluated
+            in terms of success rate. In Figure 9, we found that ACT
+            achieved an average success rate of 55.3% across 15 tasks
+            on AgileX, outperforming Franka (30.7%), UR-5e (38.0%),
+            and Tien Kung (34.0%). The experiment results indicate that
+            the ACT algorithm achieves at least one successful task
+            completion on the majority of tasks, which demonstrates the
+            effectiveness of the approach, as well as the accuracy of the
+            visual perception and robotic joint information provided by the
+            RoboMIND. </p>
+          <p>
+            <div class="columns is-centered">
+
+              <!-- Visual Effects. -->
+              <div class="column">
+                <div class="content">
+                  <h2 class="title is-3">Visual Effects</h2>
+                  <p>
+                    Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
+                    would be impossible without nerfies since it would require going through a wall.
+                  </p>
+                  <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/dollyzoom-stacked.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <!--/ Visual Effects. -->
+
+              <!-- Matting. -->
+              <div class="column">
+                <h2 class="title is-3">Matting</h2>
+                <div class="columns is-centered">
+                  <div class="column content">
+                    <p>
+                      As a byproduct of our method, we can also solve the matting problem by ignoring
+                      samples that fall outside of a bounding box during rendering.
+                    </p>
+                    <video id="matting-video" controls playsinline height="100%">
+                      <source src="./static/videos/matting.mp4" type="video/mp4">
+                    </video>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!--/ Matting. -->
+        </div>
+      </div>
+  </section>
+
+
+
+
+
+
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{park2021nerfies,
   author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
   title     = {Nerfies: Deformable Neural Radiance Fields},
   journal   = {ICCV},
   year      = {2021},
 }</code></pre>
-  </div>
-</section>
-</section>
-
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
     </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
+  </section>
+  </section>
 
-          <p>
-            The website template was borrowed from <a
-            href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>  and <a
-            href="https://eureka-research.github.io/">Eureka</a>
-          </p>
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="./static/videos/nerfies_paper.pdf">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              The website template was borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>
+              and <a href="https://eureka-research.github.io/">Eureka</a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>
