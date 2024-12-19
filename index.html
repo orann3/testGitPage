@@ -90,9 +90,9 @@
               Intelligence Normative Data for Robot Manipulation </h1>
             <div class="is-size-5 publication-authors">
                 <span class="team-name"><b>RoboMIND Dataset Team <p style="font-size: 70%">(hover to display full author list)</p></b></span>
-                <span class="author-block">Kun Wu<sup>1,∗</sup>, Chengkai Hou<sup>2,3,∗</sup>, Jiaming Liu<sup>2,3,∗</sup>,</span>
-                <span class="author-block">Zhengping Che<sup>1,∗,†</sup>, Xiaozhu Ju<sup>1,∗,†</sup>, Zhuqin Yang<sup>1</sup>, Meng Li<sup>1</sup>, Yinuo Zhao<sup>1</sup>, Zhiyuan Xu<sup>1</sup>, Guang Yang<sup>1</sup>, Zhen Zhao<sup>1</sup>, Guangyu Li<sup>1</sup>, Zhao Jin<sup>1</sup>, Lecheng Wang<sup>1</sup>, Jilei Mao<sup>1</sup>, Xinhua Wang<sup>1</sup>, Shichao Fan<sup>1</sup>, Ning Liu<sup>1</sup>, Pei Ren<sup>1</sup>, Qiang Zhang<sup>1</sup>, Yaoxu Lv<sup>2</sup>, Mengzhen Liu<sup>2,3</sup>, Jingyang He<sup>2,3</sup>, Yulin Luo<sup>2,3</sup>, Zeyu Gao<sup>3</sup>, Chenxuan Li<sup>2</sup>, Chenyang Gu<sup>2,3</sup>, Yankai Fu<sup>2</sup>, Di Wu<sup>2</sup>, Xingyu Wang<sup>2</sup>, Sixiang Chen<sup>2,3</sup>, Zhenyu Wang<sup>2</sup>, Pengju An<sup>2,3</sup>, Siyuan Qian<sup>2,3</sup>,
-                  Shanghang Zhang <sup>2,3
+                <span class="author-block">Kun Wu<sup>1,∗</sup>, Chengkai Hou<sup>2,3,∗</sup>, Jiaming Liu<sup>2,3,∗</sup>,
+                Zhengping Che<sup>1,∗,†</sup>, Xiaozhu Ju<sup>1,∗,†</sup>,<span class="author-block"></span> Zhuqin Yang<sup>1</sup>, Meng Li<sup>1</sup>, Yinuo Zhao<sup>1</sup>, Zhiyuan Xu<sup>1</sup>, Guang Yang<sup>1</sup>, Zhen Zhao<sup>1</sup>, Guangyu Li<sup>1</sup>, Zhao Jin<sup>1</sup>, Lecheng Wang<sup>1</sup>, Jilei Mao<sup>1</sup>, Xinhua Wang<sup>1</sup>, Shichao Fan<sup>1</sup>, Ning Liu<sup>1</sup>, Pei Ren<sup>1</sup>, Qiang Zhang<sup>1</sup>, Yaoxu Lv<sup>2</sup>, Mengzhen Liu<sup>2,3</sup>, Jingyang He<sup>2,3</sup>, Yulin Luo<sup>2,3</sup>, Zeyu Gao<sup>3</sup>, Chenxuan Li<sup>2</sup>, Chenyang Gu<sup>2,3</sup>, Yankai Fu<sup>2</sup>, Di Wu<sup>2</sup>, Xingyu Wang<sup>2</sup>, Sixiang Chen<sup>2,3</sup>, Zhenyu Wang<sup>2</sup>, Pengju An<sup>2,3</sup>, Siyuan Qian<sup>2,3</sup>,
+                 <br> Shanghang Zhang <sup>2,3
                     <span class="icon">
                       <svg class="svg-inline--fa fa-envelope fa-w-16" aria-hidden="true" focusable="false"
                         data-prefix="fa" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -161,7 +161,7 @@
                   </a>
                 </span> -->
                 <!-- Code Link. -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://github.com/x-humanoid-robomind"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -169,7 +169,7 @@
                     </span>
                     <span>Code</span>
                   </a>
-                </span>
+                </span> -->
                 <!-- Dataset Link. -->
                 <span class="link-block">
                   <a href="https://zitd5je6f7j.feishu.cn/share/base/form/shrcnOF6Ww4BuRWWtxljfs0aQqh"
@@ -350,54 +350,98 @@
       <br>
 
       <div id="single-task">
-        <!-- Performance on Single Tasks. -->
+        <!-- Performance on Single Tasks.. -->
         <h3 class="title is-4">Performance on Single Tasks</h3> 
+        <p> <b>Single Task Results</b>. ACT achieves an average success rate of 30.7% (Franka), 34.0% (Tien Kung), 55.3% (AgileX) and 38.0% (UR-5e).
+        </p>
+        <br>
         <div class="content has-text-justified">
             <div class="columns">
               <div class="column has-text-centered">
-                  <p style="font-size: 125%"><b>DROID (Ours)</b></p>
+                  <p style="font-size: 125%"><b>FR-PlacePearBowl-1M</b></p>
                   <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
-                      <source src="videos/droid_eval_videos/cooking_droid_speed.mp4" type="video/mp4">
+                      <source src="./static/videos/compressed_FR-PlacePearBowl.MP4" type="video/mp4">
                   </video>
               </div>
               <div class="column has-text-centered">
-                  <p style="font-size: 125%"><b>Open-X</b></p>
+                  <p style="font-size: 125%"><b>FR-SideCloseDrawer-1M</b></p>
                   <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
-                      <source src="videos/droid_eval_videos/cooking_oxe_speed.mp4" type="video/mp4">
+                      <source src="./static/videos/compressed_FR-SideCloseDrawer.MP4" type="video/mp4">
                   </video>
               </div>
               <div class="column has-text-centered">
-                  <p style="font-size: 125%"><b>No Co-Train</b></p>
+                  <p style="font-size: 125%"><b>FR-PlaceBluePink</b></p>
                   <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
-                      <source src="videos/droid_eval_videos/cooking_narrow_speed.mp4" type="video/mp4">
+                      <source src="./static/videos/FR-PlaceBluePink.mp4" type="video/mp4">
                   </video>
               </div>
           </div>
           <div class="columns">
               <div class="column has-text-centered">
-                  <p style="font-size: 125%"><b>DROID (Ours)</b></p>
+                  <p style="font-size: 125%"><b>TK-OpenTrashBin</b></p>
                   <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
-                      <source src="videos/droid_eval_videos/clean_droid.mp4" type="video/mp4">
+                      <source src="./static/videos/TK-OpenTrashBin.mp4" type="video/mp4">
                   </video>
               </div>
               <div class="column has-text-centered">
-                  <p style="font-size: 125%"><b>Open-X</b></p>
+                  <p style="font-size: 125%"><b>TK-CloseTrashBin</b></p>
                   <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
-                      <source src="videos/droid_eval_videos/clean_oxe.mp4" type="video/mp4">
+                      <source src="./static/videos/TK-CloseTrashBin.mp4" type="video/mp4">
                   </video>
               </div>
               <div class="column has-text-centered">
-                  <p style="font-size: 125%"><b>No Co-Train</b></p>
+                  <p style="font-size: 125%"><b>TK-OpenDrawerLowerCabinet</b></p>
                   <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
-                      <source src="videos/droid_eval_videos/clean_narrow.mp4" type="video/mp4">
+                      <source src="./static/videos/TK-OpenDrawerLowerCabinet.mp4" type="video/mp4">
                   </video>
               </div>
           </div>
+          <div class="columns">
+            <div class="column has-text-centered">
+                <p style="font-size: 125%"><b>AX-AppleYellowPlate</b></p>
+                <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
+                    <source src="./static/videos/AX-AppleYellowPlate.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="column has-text-centered">
+                <p style="font-size: 125%"><b>AX-CarrotGreenPlate</b></p>
+                <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
+                    <source src="./static/videos/AX-CarrotGreenPlate.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="column has-text-centered">
+                <p style="font-size: 125%"><b>AX-UnpackBowl</b></p>
+                <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
+                    <source src="./static/videos/AX-UnpackBowl.mp4" type="video/mp4">
+                </video>
+            </div>
+          </div>
+        <div class="columns">
+          <div class="column has-text-centered">
+              <p style="font-size: 125%"><b>UR-CloseTopWhiteDrawer</b></p>
+              <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
+                  <source src="./static/videos/UR-CloseTopWhiteDrawer.mp4" type="video/mp4">
+              </video>
+          </div>
+          <div class="column has-text-centered">
+              <p style="font-size: 125%"><b>UR-PickRoundBread</b></p>
+              <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
+                  <source src="./static/videos/UR-PickRoundBread.mp4" type="video/mp4">
+              </video>
+          </div>
+          <div class="column has-text-centered">
+              <p style="font-size: 125%"><b>AX-PackPlate</b></p>
+              <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
+                  <source src="./static/videos/AX-PackPlate.mp4" type="video/mp4">
+              </video>
+          </div>
+         </div>
           <br>
-          <img src="./static/images/sintaskresults.png" class="img-responsive">
-          <p> <b>Single Task Results</b>. ACT achieves an average success rate of 30.7% (Franka), 34.0% (Tien Kung), 55.3% (AgileX) and 38.0% (UR-5e). 
+          <div class="columns is-centered">
+          <p> Success Examples of ACT
           </p>
-
+          </div>
+          <br>
         </div>
       </div>
       <br>
@@ -405,49 +449,63 @@
         <!-- Performance on Multi-Tasks. -->
         <h3 class="title is-4">Performance on Multi-Tasks</h3>
         <div class="content has-text-justified">
-          <div class="columns">
-            <div class="column has-text-centered">
-                <p style="font-size: 125%"><b>DROID (Ours)</b></p>
-                <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
-                    <source src="videos/droid_eval_videos/cooking_droid_speed.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="column has-text-centered">
-                <p style="font-size: 125%"><b>Open-X</b></p>
-                <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
-                    <source src="videos/droid_eval_videos/cooking_oxe_speed.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="column has-text-centered">
-                <p style="font-size: 125%"><b>No Co-Train</b></p>
-                <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
-                    <source src="videos/droid_eval_videos/cooking_narrow_speed.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-        <div class="columns">
-            <div class="column has-text-centered">
-                <p style="font-size: 125%"><b>DROID (Ours)</b></p>
-                <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
-                    <source src="videos/droid_eval_videos/clean_droid.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="column has-text-centered">
-                <p style="font-size: 125%"><b>Open-X</b></p>
-                <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
-                    <source src="videos/droid_eval_videos/clean_oxe.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="column has-text-centered">
-                <p style="font-size: 125%"><b>No Co-Train</b></p>
-                <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
-                    <source src="videos/droid_eval_videos/clean_narrow.mp4" type="video/mp4">
-                </video>
-            </div>
-          </div>
+
           <img src="./static/images/MultiAdaptResults.png" class="img-responsive">
           <p> <b>Multi-task Adaptation Results.</b>  Results demonstrate that RoboMIND can assist the VLA models in achieving generalizable control of multi-tasks.
           </p>
+          <br>
+          <div class="columns">
+            <div class="column has-text-centered">
+                <p style="font-size: 125%"><b>AX-AppleBluePlate</b></p>
+                <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
+                    <source src="./static/videos/AX-AppleBluePlate.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="column has-text-centered">
+                <p style="font-size: 125%"><b>AX-PackBowl</b></p>
+                <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
+                    <source src="./static/videos/AX-PackBowl.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="column has-text-centered">
+                <p style="font-size: 125%"><b>AX-TakePotato</b></p>
+                <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
+                    <source src="./static/videos/AX-TakePotato.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="columns is-centered">
+        <p> Success examples of RTD-1B
+        </p>
+        </div>
+        <br>
+
+        <div class="columns">
+            <div class="column has-text-centered">
+                <p style="font-size: 125%"><b>FR-OpenCapLid</b></p>
+                <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
+                    <source src="./static/videos/FR-OpenCapLid.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="column has-text-centered">
+                <p style="font-size: 125%"><b>FR-PickStrawberryInBowl</b></p>
+                <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
+                    <source src="./static/videos/FR-PickStrawberryInBowl.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="column has-text-centered">
+                <p style="font-size: 125%"><b>FR-SlideCloseDrawer</b></p>
+                <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
+                    <source src="./static/videos/compressed_FR-SideCloseDrawer.MP4" type="video/mp4">
+                </video>
+            </div>
+          </div>
+          <div class="columns is-centered">
+          <p> Success examples of RTD-1B
+          </p>
+          </div>
+          <br>
+          </div>
           <br>
 <!-- 
             <div class="columns">
@@ -495,7 +553,7 @@
       </div>
       <div id="Failure analysis">
         <!-- Failure analysis. -->
-        <h3 class="title is-4">Failure analysis</h3>
+        <!-- <h3 class="title is-4">Failure analysis</h3>
         <div class="content has-text-justified">
          
           <div class="yush-div-center" style="display: flex; justify-content: center;">
@@ -503,7 +561,7 @@
            </div> 
           <p> <b>Top 5 failure reasons by embodiments</b>. “Inaccurate Positioning” (F1) is the most frequent failure reason across all embodiments, particularly for dual-arm AgileX tasks, where it accounts for 55.6% of failures. More results and analysis can be found in our manuscript.
           </p>
-            <div class="columns is-centered">
+            <div class="columns is-centered"> -->
 
               <!-- Visual Effects. -->
               <!-- <div class="column">
@@ -544,7 +602,7 @@
 
 
 
-  <section class="section" id="BibTeX">
+  <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>@article{park2021nerfies,
@@ -555,7 +613,7 @@
 }</code></pre>
     </div>
   </section>
-  </section>
+  </section> -->
 
   <footer class="footer">
     <div class="container">
@@ -563,9 +621,9 @@
         <a class="icon-link" href="https://arxiv.org/abs/2412.13877">
           <i class="fas fa-file-pdf"></i>
         </a>
-        <a class="icon-link" href="https://x-humanoid-robomind.github.io/" class="external-link" disabled>
+        <!-- <a class="icon-link" href="https://x-humanoid-robomind.github.io/" class="external-link" disabled>
           <i class="fab fa-github"></i>
-        </a>
+        </a> -->
       </div>
       <div class="columns is-centered">
         <div class="column is-8">
