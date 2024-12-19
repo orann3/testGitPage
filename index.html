@@ -139,7 +139,7 @@
                   </svg>
                 </span>
               </sup>
-             ,</span>
+             </span>
 
 
             <div class="is-size-5 publication-authors id=institute">
@@ -162,21 +162,21 @@
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="https://" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://arxiv.org/abs/2412.13877" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
                     <span>Paper</span>
                   </a>
                 </span>
-                <span class="link-block">
-                  <a href="https://" class="external-link button is-normal is-rounded is-dark">
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/2412.13877" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
                     </span>
                     <span>arXiv</span>
                   </a>
-                </span>
+                </span> -->
                 <!-- Code Link. -->
                 <span class="link-block">
                   <a href="https://github.com/x-humanoid-robomind"
@@ -213,11 +213,13 @@
           <source src="./static/videos/teaser.mp4" type="video/mp4">
         </video> -->
         <div class="yush-div-center">
-          <img src="./static/images/allfigures.png" class="img-responsive">
+          <img src="./static/images/roboMIND.png" class="img-responsive">
         </div>
 
         <h2 class="subtitle has-text-centered">
-          Overview of <span class="dnerf">RoboMIND</span>. We introduce RoboMIND (Multi-embodiment Intelligence Normative Data for Robot Manipulation), comprising 55k real-world demonstration trajectories across 279 diverse tasks involving 61 distinct object classes. To ensure consistency and reliability during policy learning, RoboMIND is gathered through human teleoperation and structured around a unified data collection standard. The four pie charts represent: (a) total trajectories categorized by embodiments, (b) trajectory lengths by embodiments, (c) total trajectories grouped by task categories, and (d) total trajectories based on object usage scenarios.
+          Overview of <span class="dnerf">RoboMIND</span>. We introduce RoboMIND (Multi-embodiment Intelligence Normative 
+          Data for Robot Manipulation), comprising 55k real-world demonstration trajectories across 279 diverse tasks 
+          involving 61 distinct object classes.
         </h2>
       </div>
     </div>
@@ -291,8 +293,6 @@
                investment in hardware-software infrastructure and human labor. While existing works have focused on assembling 
                various individual robot datasets, there remains a lack of a unified data collection standard and insufficient 
                diversity in tasks, scenarios, and robot types.
-            </p>
-            <p>
               In this paper, we introduce RoboMIND (Multi-embodiment Intelligence Normative Data for Robot manipulation),
                featuring 55k real-world demonstration trajectories across 279 diverse tasks involving 61 different object 
                classes. RoboMIND is collected through human teleoperation and encompasses comprehensive robotic-related 
@@ -303,12 +303,8 @@
                 robot with dual dexterous hands. In addition, we create a digital twin environment in the Isaac Sim simulator, 
                 featuring the same tasks and assets as our real-world dataset. This simulation environment not only facilitates 
                 the low-cost collection of additional training data but also enables efficient evaluation.
-            </p>
-            <p>
               We provide a thorough quantitative and qualitative analysis of RoboMIND across multiple dimensions, offering 
               detailed insights into the diversity of our datasets.
-            </p>
-            <p>
               In our experiments, we conduct extensive real-world testing with four state-of-the-art imitation learning 
               methods, demonstrating that training with RoboMIND data results in a high manipulation success rate and strong 
               generalization. In addition, investigations of failure reasons reveal promising directions for improvement.
