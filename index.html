@@ -267,33 +267,14 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Developing robust and general-purpose robotic manipulation policies is a key goal in the field of robotics. 
-              To achieve effective generalization, it is essential to construct comprehensive datasets that encompass a large 
-              number of demonstration trajectories and diverse tasks. Unlike vision or language data that can be collected 
-              from the Internet, robotic datasets require detailed observations and manipulation actions, necessitating significant
-               investment in hardware-software infrastructure and human labor. While existing works have focused on assembling 
-               various individual robot datasets, there remains a lack of a unified data collection standard and insufficient 
-               diversity in tasks, scenarios, and robot types.
-              In this paper, we introduce RoboMIND (Multi-embodiment Intelligence Normative Data for Robot manipulation),
-               featuring 55k real-world demonstration trajectories across 279 diverse tasks involving 61 different object 
-               classes. RoboMIND is collected through human teleoperation and encompasses comprehensive robotic-related 
-               information, including multi-view RGB-D images, proprioceptive robot state information, end effector details, 
-               and linguistic task descriptions. To ensure dataset consistency and reliability during policy learning,
-                RoboMIND is built on a unified data collection platform and standardized protocol, covering four distinct 
-                robotic embodiments: the Franka Emika Panda, the UR-5e, the AgileX dual-arm robot, and the Tien Kung humanoid 
-                robot with dual dexterous hands. In addition, we create a digital twin environment in the Isaac Sim simulator, 
-                featuring the same tasks and assets as our real-world dataset. This simulation environment not only facilitates 
-                the low-cost collection of additional training data but also enables efficient evaluation.
-              We provide a thorough quantitative and qualitative analysis of RoboMIND across multiple dimensions, offering 
-              detailed insights into the diversity of our datasets.
-              In our experiments, we conduct extensive real-world testing with four state-of-the-art imitation learning 
-              methods, demonstrating that training with RoboMIND data results in a high manipulation success rate and strong 
-              generalization. In addition, investigations of failure reasons reveal promising directions for improvement.
+              In this paper, we introduce RoboMIND (Multi-embodiment Intelligence Normative Data for Robot manipulation), featuring 55k real-world demonstration trajectories across 279 diverse tasks involving 61 different object classes. RoboMIND is collected through human teleoperation and encompasses comprehensive robotic-related information, including multi-view RGB-D images, proprioceptive robot state information, end effector details, and linguistic task descriptions. We provide a thorough quantitative and qualitative analysis of RoboMIND across multiple dimensions, offering detailed insights into the diversity of our datasets. In our experiments, we conduct extensive real-world testing with four state-of-the-art imitation learning methods, demonstrating that training with RoboMIND data results in a high manipulation success rate and strong generalization. 
             </p>
 
           </div>
         </div>
       </div>
+      <br>
+      <br>
       <!--/ Abstract. -->
 
       <!-- Hardware Setup. -->
@@ -301,27 +282,28 @@
         <div class="column is-full-width">
           <h2 class="title is-3">Hardware Setup</h2>
           <div class="content has-text-justified">
-            <div class="yush-div-center">
-              <img src="./static/images/hardware setup.png" class="img-responsive">
+            <div class="columns" id="4pic">
+              <div class="column has-text-centered">
+                  <img src="./static/images/setup1.png" class="interpolation-image" alt="" style="display: block; width: 100%; margin-left: auto; margin-right: auto">
+              </div>
+              <div class="column has-text-centered">
+                  <img src="./static/images/setup2.png" class="interpolation-image" alt="" style="display: block; width: 100%; margin-left: auto; margin-right: auto">
+              </div>
+              <div class="column has-text-centered">
+                <img src="./static/images/setup3.png" class="interpolation-image" alt="" style="display: block; width: 100%; margin-left: auto; margin-right: auto">
             </div>
+            <div class="column has-text-centered">
+                  <img src="./static/images/setup4.png" class="interpolation-image" alt="" style="display: block; width: 100%; margin-left: auto; margin-right: auto">
+              </div>
+          </div>
 
-            <p> We introduce RoboMIND (Multi-embodiment Intelligence Normative Data for Robot Manipulation),
-              comprising 55k real-world demonstration trajectories across 279 diverse tasks involving 61 distinct object
-              classes. </p>
+            <p> For the Franka Emika Panda robots, we use cameras positioned at the top, left, and right viewpoints to record the visual information of the task trajectories. For the AgileX/Tien Kung robots, we use their built-in cameras to record visual information. For UR robots, we use an external top camera. All demonstrations are collected using high-quality human teleoperation and stored on a unified intelligence platform. </p>
 
-            <p> To ensure consistency and reliability during policy learning, RoboMIND is gathered through human
-              teleoperation and structured around a unified data collection standard. The four pie charts represent:
-              (a) total trajectories categorized by embodiments, (b) trajectory lengths by embodiments,
-              (c) total trajectories grouped by task categories, and (d) total trajectories based on object usage
-              scenarios. </p>
-
-            <img src="./static/images/Comparison.png" class="img-responsive">
-            <p> Comparison to existing real-world datasets for robot manipulation. All data is drawn from the original
-              paper or from [41].
-              We highlight advantages of RoboMIND in pink. </p>
           </div>
         </div>
       </div>
+      <br>
+      <br>
       <!-- / Hardware Setup. -->
 
 
@@ -334,20 +316,22 @@
               <img src="./static/images/piechart.png" class="img-responsive">
             </div>
 
-            <p> We introduce RoboMIND (Multi-embodiment Intelligence Normative Data for Robot Manipulation),
-              comprising 55k real-world demonstration trajectories across 279 diverse tasks involving 61 distinct object
-              classes. </p>
+            <p><b>Dataset Analysis</b>. (a) total trajectories categorized by embodiments, (b) trajectory lengths by embodiments, (c) total trajectories grouped by task categories, and (d) total trajectories based on object usage scenarios.</p>
+           
+            <div class="yush-div-center" style="display: flex; justify-content: center;">
+               <img src="./static/images/Distribution.png" class="img-responsive" style="width: 75%"> 
+              </div> 
+            <p> <b>Distribution of objects</b> in RoboMIND,  covering most daily life settings: domestic, industrial, kitchen, office, and retail.</p>
 
-            <p> To ensure consistency and reliability during policy learning, RoboMIND is gathered through human
-              teleoperation and structured around a unified data collection standard. The four pie charts represent:
-              (a) total trajectories categorized by embodiments, (b) trajectory lengths by embodiments,
-              (c) total trajectories grouped by task categories, and (d) total trajectories based on object usage
-              scenarios. </p>
-
-            <img src="./static/images/Comparison.png" class="img-responsive">
-            <p> Comparison to existing real-world datasets for robot manipulation. All data is drawn from the original
-              paper or from [41].
-              We highlight advantages of RoboMIND in pink. </p>
+            <div class="yush-div-center" style="display: flex; justify-content: center;">
+              <img src="./static/images/skill counts.png" class="img-responsive" style="width: 50%">
+            </div>
+              <p> A histogram of <b>skill counts</b> across tasks for four embodiments. AgileX tasks typically involve two or three combined skills, extending the task horizon. Meanwhile, Tien Kung tasks vary in length, with some comprising up to five skills per task.  </p>
+                
+              <img src="./static/images/Comparison.png" class="img-responsive">
+              <p> <b>language annotation</b> Comparison to existing real-world datasets for robot manipulation. All data is drawn from the original
+                paper or from [41].
+                We highlight advantages of RoboMIND in pink. </p>
           </div>
         </div>
       </div>
@@ -544,7 +528,7 @@
               </div>
           </div>
 
-          
+
             <div class="columns is-centered">
 
               <!-- Visual Effects. -->
