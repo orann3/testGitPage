@@ -325,12 +325,14 @@
               <img src="./static/images/skill counts.png" class="img-responsive" style="width: 80%">
             </div>
               <p> <b>Left</b>: A histogram of <b>skill counts</b> across tasks for four embodiments. AgileX tasks typically involve two or three combined skills, extending the task horizon. Meanwhile, Tien Kung tasks vary in length, with some comprising up to five skills per task. <b>Right</b>: We visualize the AX-PutCarrot task with the AgileX robot, which involves three different skills. </p>
-              <br>  
-              
-              <img src="./static/images/Comparison.png" class="img-responsive">
-              <p> <b>language annotation</b> Comparison to existing real-world datasets for robot manipulation. All data is drawn from the original
-                paper or from [41].
-                We highlight advantages of RoboMIND in pink. </p>
+           <div class="yush-div-center" style="display: flex; justify-content: center;">  
+              <img src="./static/images/Annotation.png" class="img-responsive">
+           </div>
+              <p> <b>Language Description Annotation</b>. We provide refined linguistic annotations for 10,000 successful robot motion trajectories.   </p>
+            <div class="yush-div-center" style="display: flex; justify-content: center;">     
+              <img src="./static/images/Visualization.png" class="img-responsive">
+            </div>
+              <p> <b>Visualization of failed data collection cases</b>. We present two examples of failure from Franka and AgileX. In the FR-PlacePlateInPlateRack task (second row), the Franka arm fails to align with the slot, causing the plate to slip due to operator interference. In the AX-PutCarrot task (fourth row), the AgileX gripper unexpectedly opens, dropping the carrot. These failure cases were filtered out during quality inspection to maintain dataset quality. </p>
           </div>
         </div>
       </div>
@@ -342,7 +344,7 @@
       <!-- Experiment  -->
       <div class="columns is-centered">
         <div class="column is-full-width">
-          <h2 class="title is-3">Experiment</h2>
+          <h2 class="title is-3">Experiments</h2>
       <!-- Experiment  -->
       <p> We conduct comprehensive experiments employing four popular imitation learning methods, including ACT,
         BAKU, RDT-1B and OpenVLA on selected RoboMIND tasks to assess their performance and limitations.
@@ -516,6 +518,7 @@
         year={2024}
       }</code></pre>
     </div>
+    <br>
   </section>
   </section>
 
