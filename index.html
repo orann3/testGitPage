@@ -32,6 +32,16 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <style>
+    .author-block {
+        display: none;
+    }
+
+    .publication-authors:hover .author-block {
+        display: block;
+    }
+</style>
+
 </head>
 
 <body>
@@ -78,85 +88,47 @@
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">RoboMIND: Benchmark on Multi-embodiment
               Intelligence Normative Data for Robot Manipulation </h1>
-            <div class="is-size-5 ">
-            <span class="author-block">Kun Wu<sup>1,∗</sup>,</span>
-            <span class="author-block">Chengkai Hou<sup>2,3,∗</sup>,</span>
-            <span class="author-block">Zhengping Che<sup>1,∗,†</sup>,</span>
-            <br>
-            <span class="author-block">Xiaozhu Ju<sup>1,∗,†</sup>,</span>
-            <span class="author-block">Zhuqin Yang<sup>1</sup>,</span>
-            <span class="author-block">Meng Li<sup>1</sup>,</span>
-            <span class="author-block">Yinuo Zhao<sup>1</sup>,</span>
-            <span class="author-block">Zhiyuan Xu<sup>1</sup>,</span>
-            <span class="author-block">Guang Yang<sup>1</sup>,</span>
-            <span class="author-block">Zhen Zhao<sup>1</sup>,</span>
-            <span class="author-block">Guangyu Li<sup>1</sup>,</span>
-            <span class="author-block">Zhao Jin<sup>1</sup>,</span>
-            <span class="author-block">Lecheng Wang<sup>1</sup>,</span>
-            <span class="author-block">Jilei Mao<sup>1</sup>,</span>
-            <span class="author-block">Xinhua Wang<sup>1</sup>,</span>
-            <span class="author-block">Shichao Fan<sup>1</sup>,</span>
-            <span class="author-block">Ning Liu<sup>1</sup>,</span>
-            <span class="author-block">Pei Ren<sup>1</sup>,</span>
-            <span class="author-block">Qiang Zhang<sup>1</sup>,</span>
-            <span class="author-block">Yaoxu Lv<sup>2</sup>,</span>
-            <span class="author-block">Mengzhen Liu<sup>2,3</sup>,</span>
-            <span class="author-block">Jingyang He<sup>2,3</sup>,</span>
-            <span class="author-block">Yulin Luo<sup>2,3</sup>,</span>
-            <span class="author-block">Zeyu Gao<sup>3</sup>,</span>
-            <span class="author-block">Chenxuan Li<sup>2</sup>,</span>
-            <span class="author-block">Chenyang Gu<sup>2,3</sup>,</span>
-            <span class="author-block">Yankai Fu<sup>2</sup>,</span>
-            <span class="author-block">Di Wu<sup>2</sup>,</span>
-            <span class="author-block">Xingyu Wang<sup>2</sup>,</span>
-            <span class="author-block">Sixiang Chen<sup>2,3</sup>,</span>
-            <span class="author-block">Zhenyu Wang<sup>2</sup>,</span>
-            <span class="author-block">Pengju An<sup>2,3</sup>,</span>
-            <span class="author-block">Siyuan Qian<sup>2,3</sup>,</span>
-            <span class="author-block">
-              Shanghang Zhang <sup>2,3
-                <span class="icon">
-                  <svg class="svg-inline--fa fa-envelope fa-w-16" aria-hidden="true" focusable="false"
-                    data-prefix="fa" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512" data-fa-i2svg="">
-                    <path fill="currentColor"
-                      d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
-                    </path>
-                  </svg>
-                
-                </span>
-              </sup>
-             ,</span>
-             <span class="author-block">
-              Jian Tang<sup>1
-                <span class="icon">
-                  <svg class="svg-inline--fa fa-envelope fa-w-16" aria-hidden="true" focusable="false"
-                    data-prefix="fa" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512" data-fa-i2svg="">
-                    <path fill="currentColor"
-                      d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
-                    </path>
-                  </svg>
-                </span>
-              </sup>
-             </span>
-
-
-            <div class="is-size-5 publication-authors id=institute">
-              <span class="author-block"><sup>1</sup>Beijing Innovation Center of Humanoid Robotics,</span>
-              <span class="author-block"><sup>2</sup>State Key Laboratory of Multimedia Information Processing, School of Computer Science, Peking University,</span>
-              <span class="author-block"><sup>3</sup>Beijing Academy of Artificial Intelligence</span>
-              
-            </div>
-
-            
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>*</sup>Co-first Authors: Kun Wu, Chengkai Hou, Jiaming Liu, Zhengping Che,
-                and Xiaozhu Ju,</span>
-              <span class="author-block"><sup>†</sup>Corresponding Authors: Zhengping Che and Xiaozhu Ju</span>
-              <span class="author-block">Project Leaders: Shanghang Zhang and Jian Tang</span>
-              
-            </div>
+                <span class="team-name"><b>RoboMIND Dataset Team <p style="font-size: 70%">(hover to display full author list)</p></b></span>
+                <span class="author-block">Kun Wu<sup>1,∗</sup>, Chengkai Hou<sup>2,3,∗</sup>, Jiaming Liu<sup>2,3,∗</sup>,</span>
+                <span class="author-block">Zhengping Che<sup>1,∗,†</sup>, Xiaozhu Ju<sup>1,∗,†</sup>, Zhuqin Yang<sup>1</sup>, Meng Li<sup>1</sup>, Yinuo Zhao<sup>1</sup>, Zhiyuan Xu<sup>1</sup>, Guang Yang<sup>1</sup>, Zhen Zhao<sup>1</sup>, Guangyu Li<sup>1</sup>, Zhao Jin<sup>1</sup>, Lecheng Wang<sup>1</sup>, Jilei Mao<sup>1</sup>, Xinhua Wang<sup>1</sup>, Shichao Fan<sup>1</sup>, Ning Liu<sup>1</sup>, Pei Ren<sup>1</sup>, Qiang Zhang<sup>1</sup>, Yaoxu Lv<sup>2</sup>, Mengzhen Liu<sup>2,3</sup>, Jingyang He<sup>2,3</sup>, Yulin Luo<sup>2,3</sup>, Zeyu Gao<sup>3</sup>, Chenxuan Li<sup>2</sup>, Chenyang Gu<sup>2,3</sup>, Yankai Fu<sup>2</sup>, Di Wu<sup>2</sup>, Xingyu Wang<sup>2</sup>, Sixiang Chen<sup>2,3</sup>, Zhenyu Wang<sup>2</sup>, Pengju An<sup>2,3</sup>, Siyuan Qian<sup>2,3</sup>,
+                  Shanghang Zhang <sup>2,3
+                    <span class="icon">
+                      <svg class="svg-inline--fa fa-envelope fa-w-16" aria-hidden="true" focusable="false"
+                        data-prefix="fa" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor"
+                          d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+                        </path>
+                      </svg>
+                    
+                    </span>
+                  </sup>
+                , Jian Tang<sup>1
+                    <span class="icon">
+                      <svg class="svg-inline--fa fa-envelope fa-w-16" aria-hidden="true" focusable="false"
+                        data-prefix="fa" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor"
+                          d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+                        </path>
+                      </svg>
+                    </span>
+                  </sup>
+                </span>
+
+
+                <div class="is-size-5 publication-authors id=institute">
+                  <span class="author-block"><sup>1</sup>Beijing Innovation Center of Humanoid Robotics, <sup>2</sup>State Key Laboratory of Multimedia Information Processing, School of Computer Science, Peking University, <sup>3</sup>Beijing Academy of Artificial Intelligence</span>
+                  
+                </div>
+
+                <div class="is-size-6 publication-authors"> 
+                  <span class="author-block"><sup>*</sup>Co-first Authors: Kun Wu, Chengkai Hou, Jiaming Liu, Zhengping Che,
+                              and Xiaozhu Ju, <sup>†</sup>Corresponding Authors: Zhengping Che and Xiaozhu Ju, Project Leaders: Shanghang Zhang and Jian Tang</span>
+                 <br>           
+                </div>
+              </div>
 
             <div class="column has-text-centered">
               <div class="publication-links">
@@ -217,7 +189,7 @@
         </div>
 
         <h2 class="subtitle has-text-centered">
-          Overview of <span class="dnerf">RoboMIND</span>. We introduce RoboMIND (Multi-embodiment Intelligence Normative 
+          <span style="font-weight: bold"> Overview of RoboMIND</span>. We introduce RoboMIND (Multi-embodiment Intelligence Normative 
           Data for Robot Manipulation), comprising 55k real-world demonstration trajectories across 279 diverse tasks 
           involving 61 distinct object classes.
         </h2>
