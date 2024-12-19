@@ -317,17 +317,18 @@
             </div>
 
             <p><b>Dataset Analysis</b>. (a) total trajectories categorized by embodiments, (b) trajectory lengths by embodiments, (c) total trajectories grouped by task categories, and (d) total trajectories based on object usage scenarios.</p>
-           
+            <br>
             <div class="yush-div-center" style="display: flex; justify-content: center;">
                <img src="./static/images/Distribution.png" class="img-responsive" style="width: 75%"> 
               </div> 
             <p> <b>Distribution of objects</b> in RoboMIND,  covering most daily life settings: domestic, industrial, kitchen, office, and retail.</p>
-
+            <br>
             <div class="yush-div-center" style="display: flex; justify-content: center;">
-              <img src="./static/images/skill counts.png" class="img-responsive" style="width: 50%">
+              <img src="./static/images/skill counts.png" class="img-responsive" style="width: 80%">
             </div>
-              <p> A histogram of <b>skill counts</b> across tasks for four embodiments. AgileX tasks typically involve two or three combined skills, extending the task horizon. Meanwhile, Tien Kung tasks vary in length, with some comprising up to five skills per task.  </p>
-                
+              <p> <b>Left</b>: A histogram of <b>skill counts</b> across tasks for four embodiments. AgileX tasks typically involve two or three combined skills, extending the task horizon. Meanwhile, Tien Kung tasks vary in length, with some comprising up to five skills per task. <b>Right</b>: We visualize the AX-PutCarrot task with the AgileX robot, which involves three different skills. </p>
+              <br>  
+              
               <img src="./static/images/Comparison.png" class="img-responsive">
               <p> <b>language annotation</b> Comparison to existing real-world datasets for robot manipulation. All data is drawn from the original
                 paper or from [41].
@@ -345,39 +346,15 @@
         <div class="column is-full-width">
           <h2 class="title is-3">Experiment</h2>
       <!-- Experiment  -->
-
+      <p> We conduct comprehensive experiments employing four popular imitation learning methods, including ACT,
+        BAKU, RDT-1B and OpenVLA on selected RoboMIND tasks to assess their performance and limitations.
+      </p>
+      <br>
 
       <div id="single-task">
-        <!-- single-task imitation learning model. -->
-        <h3 class="title is-4">Single-task imitation learning model</h3> 
+        <!-- Performance on Single Tasks. -->
+        <h3 class="title is-4">Performance on Single Tasks</h3> 
         <div class="content has-text-justified">
-          <img src="./static/images/Success rates.png" class="img-responsive">
-          <p> For single-task imitation learning model, such as ACT,
-            which is specifically designed for single-task learning, we
-            trained it from scratch using the RobotMind dataset and di
-            rectly deployed it on the corresponding training tasks. Specifi
-            cally, we employed ACT [93], DP [12], and BAKU [32] algo
-            rithms, adhering to the default model settings recommended in
-            their original publications. These experiments were performed
-            across 45 tasks, distributed as follows: 15 tasks with the Franka
-            robot, 15 tasks with AgileX, 10 tasks with Tien Kung, and 5
-            tasks with UR-5e, which are already explained in detail in the
-            Section V-A.
-
-
-            Figure 9 presents the performance of ACT, BAKU and
-            DP across 45 tasks using four types of robots, evaluated
-            in terms of success rate. In Figure 9, we found that ACT
-            achieved an average success rate of 55.3% across 15 tasks
-            on AgileX, outperforming Franka (30.7%), UR-5e (38.0%),
-            and Tien Kung (34.0%). The experiment results indicate that
-            the ACT algorithm achieves at least one successful task
-            completion on the majority of tasks, which demonstrates the
-            effectiveness of the approach, as well as the accuracy of the
-            visual perception and robotic joint information provided by the
-            RoboMIND. </p>
-          <p>
-
             <div class="columns">
               <div class="column has-text-centered">
                   <p style="font-size: 125%"><b>DROID (Ours)</b></p>
@@ -418,75 +395,63 @@
                   </video>
               </div>
           </div>
+          <br>
+          <img src="./static/images/sintaskresults.png" class="img-responsive">
+          <p> <b>Single Task Results</b>. ACT achieves an average success rate of 30.7% (Franka), 34.0% (Tien Kung), 55.3% (AgileX) and 38.0% (UR-5e). 
+          </p>
 
-            <div class="columns is-centered">
-              <!-- Visual Effects. -->
-              <div class="column">
-                <div class="content">
-                  <h2 class="title is-5">Visual Effects</h2>
-                  <p>
-                    Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-                    would be impossible without nerfies since it would require going through a wall.
-                  </p>
-                  <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/dollyzoom-stacked.mp4" type="video/mp4">
-                  </video>
-                </div>
-              </div>
-              <!--/ Visual Effects. -->
-
-              <!-- Matting. -->
-              <div class="column">
-                <h2 class="title is-5">Matting</h2>
-                <div class="columns is-centered">
-                  <div class="column content">
-                    <p>
-                      As a byproduct of our method, we can also solve the matting problem by ignoring
-                      samples that fall outside of a bounding box during rendering.
-                    </p>
-                    <video id="matting-video" controls playsinline height="100%">
-                      <source src="./static/videos/matting.mp4" type="video/mp4">
-                    </video>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-            <!--/ Matting. -->
         </div>
       </div>
       <br>
       <div id="multitask">
-        <!-- multitask imitation learning model. -->
-        <h3 class="title is-4">Single-task imitation learning model</h3>
+        <!-- Performance on Multi-Tasks. -->
+        <h3 class="title is-4">Performance on Multi-Tasks</h3>
         <div class="content has-text-justified">
-          <img src="./static/images/Success rates.png" class="img-responsive">
-          <p> For single-task imitation learning model, such as ACT,
-            which is specifically designed for single-task learning, we
-            trained it from scratch using the RobotMind dataset and di
-            rectly deployed it on the corresponding training tasks. Specifi
-            cally, we employed ACT [93], DP [12], and BAKU [32] algo
-            rithms, adhering to the default model settings recommended in
-            their original publications. These experiments were performed
-            across 45 tasks, distributed as follows: 15 tasks with the Franka
-            robot, 15 tasks with AgileX, 10 tasks with Tien Kung, and 5
-            tasks with UR-5e, which are already explained in detail in the
-            Section V-A.
-
-
-            Figure 9 presents the performance of ACT, BAKU and
-            DP across 45 tasks using four types of robots, evaluated
-            in terms of success rate. In Figure 9, we found that ACT
-            achieved an average success rate of 55.3% across 15 tasks
-            on AgileX, outperforming Franka (30.7%), UR-5e (38.0%),
-            and Tien Kung (34.0%). The experiment results indicate that
-            the ACT algorithm achieves at least one successful task
-            completion on the majority of tasks, which demonstrates the
-            effectiveness of the approach, as well as the accuracy of the
-            visual perception and robotic joint information provided by the
-            RoboMIND. </p>
-          <p>
-
+          <div class="columns">
+            <div class="column has-text-centered">
+                <p style="font-size: 125%"><b>DROID (Ours)</b></p>
+                <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
+                    <source src="videos/droid_eval_videos/cooking_droid_speed.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="column has-text-centered">
+                <p style="font-size: 125%"><b>Open-X</b></p>
+                <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
+                    <source src="videos/droid_eval_videos/cooking_oxe_speed.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="column has-text-centered">
+                <p style="font-size: 125%"><b>No Co-Train</b></p>
+                <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
+                    <source src="videos/droid_eval_videos/cooking_narrow_speed.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column has-text-centered">
+                <p style="font-size: 125%"><b>DROID (Ours)</b></p>
+                <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
+                    <source src="videos/droid_eval_videos/clean_droid.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="column has-text-centered">
+                <p style="font-size: 125%"><b>Open-X</b></p>
+                <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
+                    <source src="videos/droid_eval_videos/clean_oxe.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="column has-text-centered">
+                <p style="font-size: 125%"><b>No Co-Train</b></p>
+                <video poster="" id="" autoplay="" controls="" muted="" loop="" height="100%" playbackrate="2.0" style="border-radius: 5px;">
+                    <source src="videos/droid_eval_videos/clean_narrow.mp4" type="video/mp4">
+                </video>
+            </div>
+          </div>
+          <img src="./static/images/MultiAdaptResults.png" class="img-responsive">
+          <p> <b>Multi-task Adaptation Results.</b>  Results demonstrate that RoboMIND can assist the VLA models in achieving generalizable control of multi-tasks.
+          </p>
+          <br>
+<!-- 
             <div class="columns">
               <div class="column has-text-centered">
                   <p style="font-size: 150%"><b>DROID (Ours)</b></p>
@@ -526,81 +491,24 @@
                       <source src="videos/droid_eval_videos/clean_narrow.mp4" type="video/mp4">
                   </video>
               </div>
-          </div>
+          </div> -->
 
-
-            <div class="columns is-centered">
-
-              <!-- Visual Effects. -->
-              <div class="column">
-                <div class="content">
-                  <h2 class="title is-5">Visual Effects</h2>
-                  <p>
-                    Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-                    would be impossible without nerfies since it would require going through a wall.
-                  </p>
-                  <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/dollyzoom-stacked.mp4" type="video/mp4">
-                  </video>
-                </div>
-              </div>
-              <!--/ Visual Effects. -->
-
-              <!-- Matting. -->
-              <div class="column">
-                <h2 class="title is-5">Matting</h2>
-                <div class="columns is-centered">
-                  <div class="column content">
-                    <p>
-                      As a byproduct of our method, we can also solve the matting problem by ignoring
-                      samples that fall outside of a bounding box during rendering.
-                    </p>
-                    <video id="matting-video" controls playsinline height="100%">
-                      <source src="./static/videos/matting.mp4" type="video/mp4">
-                    </video>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-            <!--/ Matting. -->
         </div>
       </div>
-      <br>
       <div id="Failure analysis">
         <!-- Failure analysis. -->
-        <h3 class="title is-4">Single-task imitation learning model</h3>
+        <h3 class="title is-4">Failure analysis</h3>
         <div class="content has-text-justified">
-          <img src="./static/images/Success rates.png" class="img-responsive">
-          <p> For single-task imitation learning model, such as ACT,
-            which is specifically designed for single-task learning, we
-            trained it from scratch using the RobotMind dataset and di
-            rectly deployed it on the corresponding training tasks. Specifi
-            cally, we employed ACT [93], DP [12], and BAKU [32] algo
-            rithms, adhering to the default model settings recommended in
-            their original publications. These experiments were performed
-            across 45 tasks, distributed as follows: 15 tasks with the Franka
-            robot, 15 tasks with AgileX, 10 tasks with Tien Kung, and 5
-            tasks with UR-5e, which are already explained in detail in the
-            Section V-A.
-
-
-            Figure 9 presents the performance of ACT, BAKU and
-            DP across 45 tasks using four types of robots, evaluated
-            in terms of success rate. In Figure 9, we found that ACT
-            achieved an average success rate of 55.3% across 15 tasks
-            on AgileX, outperforming Franka (30.7%), UR-5e (38.0%),
-            and Tien Kung (34.0%). The experiment results indicate that
-            the ACT algorithm achieves at least one successful task
-            completion on the majority of tasks, which demonstrates the
-            effectiveness of the approach, as well as the accuracy of the
-            visual perception and robotic joint information provided by the
-            RoboMIND. </p>
-          <p>
+         
+          <div class="yush-div-center" style="display: flex; justify-content: center;">
+            <img src="./static/images/top5failure.png" class="img-responsive" style="width: 50%"> 
+           </div> 
+          <p> <b>Top 5 failure reasons by embodiments</b>. “Inaccurate Positioning” (F1) is the most frequent failure reason across all embodiments, particularly for dual-arm AgileX tasks, where it accounts for 55.6% of failures. More results and analysis can be found in our manuscript.
+          </p>
             <div class="columns is-centered">
 
               <!-- Visual Effects. -->
-              <div class="column">
+              <!-- <div class="column">
                 <div class="content">
                   <h2 class="title is-5">Visual Effects</h2>
                   <p>
@@ -611,11 +519,11 @@
                     <source src="./static/videos/dollyzoom-stacked.mp4" type="video/mp4">
                   </video>
                 </div>
-              </div>
+              </div> -->
               <!--/ Visual Effects. -->
 
               <!-- Matting. -->
-              <div class="column">
+              <!-- <div class="column">
                 <h2 class="title is-5">Matting</h2>
                 <div class="columns is-centered">
                   <div class="column content">
@@ -630,7 +538,7 @@
 
                 </div>
               </div>
-            </div>
+            </div> -->
             <!--/ Matting. -->
         </div>
       </div>
