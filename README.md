@@ -1,4 +1,13 @@
-## 数据说明
+# [RoboMIND: Benchmark on Multi-embodiment Intelligence Normative Data for Robot Manipulation](https://x-humanoid-robomind.github.io/)
+
+[![License](https://img.shields.io/badge/License-Apache_2.0-yellow.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Project Page](https://img.shields.io/badge/Project%20Page-RoboMIND+-blue.svg)](https://x-humanoid-robomind.github.io/)
+[![arXiv](https://img.shields.io/badge/arXiv-RoboMIND+-blue.svg)](https://arxiv.org/abs/2412.13877)
+[![Dataset](https://img.shields.io/badge/Dataset-TBU-000000.svg)](https://zitd5je6f7j.feishu.cn/share/base/form/shrcnOF6Ww4BuRWWtxljfs0aQqh)
+
+
+
+## 📁数据说明📁
 构建高质量的机器人训练数据集对开发具有良好泛化能力的端到端具身智能大模型至关重要。理想的数据集应涵盖多样化的场景、任务类型和机器人平台，使模型能够适应不同环境并可靠执行各类任务。本团队构建了一个大规模、真实的机器人学习数据集，记录机器人在复杂环境中执行长程任务时的交互数据，从而支持训练出具有通用操作能力的智能模型。
 
 本数据集的部分目录结构示例如下，展示了Franka机器人下单个任务的2条训练轨迹和2条验证轨迹：
@@ -29,7 +38,6 @@
 ```
 
 ## 数据分布
-![alt text](..\\static\images\piechart.png)
 <img src="./static/images/piechart.png" border=0 width=80%>
 ### 机器人平台构成
 RoboMIND数据集汇集了多种机器人平台的操作数据，包括19,222条Franka Emika Panda单臂机器人轨迹、9,686条"天工"人形机器人轨迹、8,030条AgileX Cobot Magic V2.0双臂机器人轨迹、6,911条UR-5e单臂机器人轨迹，以及11,783条在仿真环境中采集的Franka机械臂数据。其中，自研的"天工"人形机器人贡献了17.4%的数据量，提供了大量需要高度协调能力的双臂操作任务。
