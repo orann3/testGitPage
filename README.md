@@ -4,7 +4,7 @@
 [![Project Page](https://img.shields.io/badge/Project%20Page-RoboMIND-blue.svg)](https://x-humanoid-robomind.github.io/)
 [![arXiv](https://badgen.net/badge/icon/arXiv?icon=awesome&label&color=red&style=flat-square)](https://arxiv.org/abs/2412.13877)
 [![Dataset](https://img.shields.io/badge/Dataset-TBU-000000.svg)](https://zitd5je6f7j.feishu.cn/share/base/form/shrcnOF6Ww4BuRWWtxljfs0aQqh)
-
+[![QQ群](https://img.shields.io/badge/QQ群-XXXXXXXX-orange.svg)](https://zitd5je6f7j.feishu.cn/share/base/form/shrcnOF6Ww4BuRWWtxljfs0aQqh)
 
 
 ## 📁 数据说明 📁
@@ -37,7 +37,7 @@
 | -- h5_simulation
 ```
 
-## 📊 数据分布 📊
+## 💾 数据分布 💾
 <img src="./static/images/piechart.png" border=0 width=100%>
 
 ### 🤖 机器人平台构成 🤖
@@ -54,13 +54,13 @@ RoboMIND数据集汇集了多种机器人平台的操作数据，包括19,222条
 
 （物品图）
 
-## 数据使用
+## 📊 数据使用 📊
 
 
 
 
 
-### 📝 Citation 📝
+## 📝 Citation 📝
 If you find RoboMIND useful in your research, please consider citing:
 ```
 @article{wu2024robomindbenchmarkmultiembodimentintelligence,
