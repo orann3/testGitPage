@@ -29,7 +29,8 @@
 ```
 
 ## 数据分布
-（4个饼图）
+![alt text](..\\static\images\piechart.png)
+<img src="./static/images/piechart.png" border=0 width=80%>
 ### 机器人平台构成
 RoboMIND数据集汇集了多种机器人平台的操作数据，包括19,222条Franka Emika Panda单臂机器人轨迹、9,686条"天工"人形机器人轨迹、8,030条AgileX Cobot Magic V2.0双臂机器人轨迹、6,911条UR-5e单臂机器人轨迹，以及11,783条在仿真环境中采集的Franka机械臂数据。其中，自研的"天工"人形机器人贡献了17.4%的数据量，提供了大量需要高度协调能力的双臂操作任务。
 
