@@ -55,3 +55,14 @@ RoboMIND数据集汇集了多种机器人平台的操作数据，包括19,222条
 （物品图）
 
 ## 数据使用
+
+
+
+
+
+
+
+## 参与讨论
+如果您对 RoboMIND 感兴趣，欢迎加入微信群，参与讨论。
+<img src="./static/images/piechart.png" border=0 width=50%>
+
