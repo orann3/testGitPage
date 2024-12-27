@@ -56,7 +56,7 @@ RoboMIND数据集汇集了多种机器人平台的操作数据，包括19,222条
 
 ## 📊 数据使用 📊
 
-请参考 ![Quick_Start.ipynb](./static/quick_start.ipynb)。
+请参考 [Quick_Start.ipynb](./static/quick_start.ipynb)。
 
 
 ## 📝 引用 📝
