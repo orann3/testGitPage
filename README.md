@@ -1,3 +1,11 @@
+<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
 # [RoboMIND: Benchmark on Multi-embodiment Intelligence Normative Data for Robot Manipulation](https://x-humanoid-robomind.github.io/)
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-yellow.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -57,6 +65,8 @@ RoboMIND数据集汇集了多种机器人平台的操作数据，包括19,222条
 <div style="text-align: center; margin: 0 auto; width: 80%;">
   <img src="./static/images/Distribution.png" alt="object_type_distribution" style="width: 80%; height: auto;">
 </div>
+
+![object_type_distribution](./static/images/Distribution.png){: .center width="80%"}
 
 ## 📊 数据使用 📊
 
