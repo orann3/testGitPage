@@ -60,13 +60,8 @@ RoboMIND数据集汇集了多种机器人平台的操作数据，包括19,222条
 ### 💪 物品多样性 💪
 整个数据集包含了61种不同的物品类别，具体如下所示。可以看出，在厨房场景中，数据集不仅包含了常见的食物，如草莓、鸡蛋、香蕉和梨子等，也包括了复杂的可调节物体，如烤箱和面包机。在家庭场景中，数据集既包括了刚性物体，如网球，也包括了可变形物体，如玩具。办公和工业场景则包含了需要精确控制的小物体，如电池和齿轮。这样多样化的物体种类不仅增加了数据集的复杂性，也有助于训练能够在各种环境下执行操作的通用操控策略。
 
-// <img src="./static/images/Distribution.png" border=0 width=80% text-align=center>
+![distribution](https://files.mdnice.com/user/16533/17b96b22-b4fe-4c4e-884b-4f5516fd7146.png)
 
-<div style="text-align: center; margin: 0 auto; width: 80%;">
-  <img src="./static/images/Distribution.png" alt="object_type_distribution" style="width: 80%; height: auto;">
-</div>
-
-![object_type_distribution](./static/images/Distribution.png){: .center width="80%"}
 
 ## 📊 数据使用 📊
 
