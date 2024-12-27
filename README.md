@@ -4,7 +4,7 @@
 [![Project Page](https://img.shields.io/badge/Project%20Page-RoboMIND-blue.svg)](https://x-humanoid-robomind.github.io/)
 [![arXiv](https://badgen.net/badge/icon/arXiv?icon=awesome&label&color=red&style=flat-square)](https://arxiv.org/abs/2412.13877)
 [![Dataset](https://img.shields.io/badge/Dataset-TBU-000000.svg)](https://zitd5je6f7j.feishu.cn/share/base/form/shrcnOF6Ww4BuRWWtxljfs0aQqh)
-- [[![QQ群](https://img.shields.io/badge/QQ群-XXXXXXXX-orange.svg)](https://zitd5je6f7j.feishu.cn/share/base/form/shrcnOF6Ww4BuRWWtxljfs0aQqh)]
+<!-- [![QQ群](https://img.shields.io/badge/QQ群-XXXXXXXX-orange.svg)](https://zitd5je6f7j.feishu.cn/share/base/form/shrcnOF6Ww4BuRWWtxljfs0aQqh) -->
 
 
 ## 📁 数据说明 📁
