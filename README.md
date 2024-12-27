@@ -55,7 +55,7 @@ RoboMIND数据集汇集了多种机器人平台的操作数据，包括19,222条
 // <img src="./static/images/Distribution.png" border=0 width=80% text-align=center>
 
 <div style="text-align: center; margin: 0 auto; width: 80%;">
-  <img src="./static/images/Distribution.png" alt="object_type_distribution" style="width: 100%; height: auto;">
+  <img src="./static/images/Distribution.png" alt="object_type_distribution" style="width: 80%; height: auto;">
 </div>
 
 ## 📊 数据使用 📊
