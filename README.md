@@ -308,8 +308,8 @@ if __name__ == "__main__":
 ```
 
 
-## 📝 Citation 📝
-If you find RoboMIND useful in your research, please consider citing:
+## 📝 引用 📝
+如果您发现 RoboMIND 对您的研究有帮助，请考虑引用：
 ```
 @article{wu2024robomindbenchmarkmultiembodimentintelligence,
         title={RoboMIND: Benchmark on Multi-embodiment Intelligence Normative Data for Robot Manipulation},
@@ -322,7 +322,5 @@ If you find RoboMIND useful in your research, please consider citing:
 
 
 ## 参与讨论
-如果您对 RoboMIND 感兴趣，欢迎加入微信群，参与讨论。
-
-<img src="./static/images/piechart.png" border=0 width=50%>
-
+如果您对 RoboMIND 感兴趣，欢迎加入 QQ 群，参与讨论：
+[placeholder]
