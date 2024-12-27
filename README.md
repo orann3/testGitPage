@@ -323,4 +323,4 @@ if __name__ == "__main__":
 ## 参与讨论
 如果您对 RoboMIND 感兴趣，欢迎加入微信群，参与讨论。
 
-<img src="./static/images/qrcode.png" border=0 width=30%>
+<img src="./static/images/qrcode.jpg" border=0 width=30%>
