@@ -12,7 +12,7 @@
 <img src="./static/images/piechart.png" border=0 width=100%>
 
 ### 🤖 Composition of RoboMIND 🤖
-We present RoboMIND (Multi-embodiment Intelligence Normative Dataset and Benchmark for Robot Manipulation), a comprehensive dataset featuring 55,000 real-world demonstration trajectories spanning 279 distinct tasks and involving 61 unique object classes.
+We present RoboMIND (Multi-embodiment Intelligence Normative Dataset and Benchmark for Robot Manipulation), a comprehensive dataset featuring 55k real-world demonstration trajectories spanning 279 distinct tasks and involving 61 unique object classes.
 
 The RoboMIND dataset integrates teleoperation data from multiple robotic embodiments, comprising 31,005 trajectories from the Franka Emika Panda single-arm robot, 9,686 trajectories from the Tien Kung humanoid robot, 8,030 trajectories from the AgileX Cobot Magic V2.0 dual-arm robot, and 6,911 trajectories from the UR-5e single-arm robot.
 
