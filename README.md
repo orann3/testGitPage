@@ -6,7 +6,7 @@
 [![Dataset](https://img.shields.io/badge/Dataset-TBU-000000.svg)](https://zitd5je6f7j.feishu.cn/share/base/form/shrcnOF6Ww4BuRWWtxljfs0aQqh)
 
 
-[English](./README.md) | [中文](./README.zh.md)
+English | [中文](./README.zh.md)
 ## 💾 Overview of RoboMIND 💾
 <img src="./static/images/piechart.png" border=0 width=100%>
 
