@@ -7,7 +7,7 @@
 <!-- [![QQ群](https://img.shields.io/badge/QQ群-XXXXXXXX-orange.svg)](https://zitd5je6f7j.feishu.cn/share/base/form/shrcnOF6Ww4BuRWWtxljfs0aQqh) -->
 
 
-English(./README.md) | [中文](./README.zh.md)
+[English](./README.md) | [中文](./README.zh.md)
 ## 💾 Overview of RoboMIND 💾
 <img src="./static/images/piechart.png" border=0 width=100%>
 
